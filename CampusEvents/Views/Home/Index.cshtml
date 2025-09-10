@@ -1,0 +1,182 @@
+﻿@{
+    ViewData["Title"] = "CampusEvents - Connect Through Events";
+}
+
+
+<section class="hero-section bg-campus-gradient position-relative">
+    <div class="container">
+        <div class="row align-items-center min-vh-80">
+            <div class="col-lg-6">
+                <h1 class="display-3 fw-bold text-white mb-4">Connect Through Campus Events</h1>
+                <p class="lead text-white mb-4">Discover, create, and join events that bring your campus community together.</p>
+                <div class="d-flex gap-3 flex-wrap">
+
+                    <a asp-controller="Community" asp-action="Index" class="btn btn-light btn-lg px-4 rounded-pill shadow-sm">
+                        <i class="fas fa-users me-2"></i>Explore Communities
+                    </a>
+                    <a asp-controller="Calendar" asp-action="Index" class="btn btn-outline-light btn-lg px-4 rounded-pill shadow-sm">
+                        <i class="fas fa-calendar me-2"></i>View Calendar
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                     alt="Campus Students" class="img-fluid rounded-4 shadow-lg">
+            </div>
+        </div>
+    </div>
+
+    <div class="shape-1"></div>
+    <div class="shape-2"></div>
+</section>
+
+<section class="py-5 bg-campus-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-campus-dark">Why Choose CampusEvents?</h2>
+            <p class="lead text-muted">Everything you need to stay connected with your campus community</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 hover-card">
+                    <a class="nav-link" asp-controller="Community" asp-action="Index">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-circle bg-campus-primary text-white mb-3">
+                                <i class="fas fa-users fa-2x"></i>
+                            </div>
+                            <h4 class="card-title">Join Communities</h4>
+                            <p class="card-text">Find and join communities that match your interests and passions.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 hover-card">
+                    <a class="nav-link" asp-controller="Event" asp-action="Index">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-circle bg-campus-green text-white mb-3">
+                                <i class="fas fa-calendar-plus fa-2x"></i>
+                            </div>
+                            <h4 class="card-title">Create Events</h4>
+                            <p class="card-text">Organize events for your community and manage RSVPs easily.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 hover-card">
+                    <a class="nav-link" asp-controller="Calendar" asp-action="Index">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-circle bg-campus-orange text-white mb-3">
+                                <i class="fas fa-bell fa-2x"></i>
+                            </div>
+                            <h4 class="card-title">Stay Updated</h4>
+                            <p class="card-text">Never miss an event with our calendar view and notifications.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5 bg-campus-gradient text-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="display-5 fw-bold mb-4">Ready to Get Started?</h2>
+                <p class="lead mb-4">Join thousands of students who are already connecting through CampusEvents.</p>
+
+                <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-light btn-lg px-5 rounded-pill shadow">
+                    <i class="fas fa-user-plus me-2"></i>Sign Up Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Styles {
+    <style>
+
+        .hero-section {
+            /* background: linear-gradient(135deg, #0066cc 0%, #33cc99 50%, #ff7043 100%); */
+            padding: 100px 0;
+            margin-top: -76px;
+            padding-top: 176px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shape-1, .shape-2 {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.15;
+        }
+
+        .shape-1 {
+            width: 200px;
+            height: 200px;
+            background: #ff7043;
+            top: 10%;
+            right: -60px;
+        }
+
+        .shape-2 {
+            width: 150px;
+            height: 150px;
+            background: #33cc99;
+            bottom: -40px;
+            left: -40px;
+        }
+
+        .min-vh-80 {
+            min-height: 80vh;
+        }
+
+        .bg-campus-light {
+            background-color: #f5f9ff;
+        }
+
+        .bg-campus-gradient {
+            background: linear-gradient(135deg, #33cc99 0%, #0066cc 50%, #ff7043 100%);
+        }
+
+        .text-campus-dark {
+            color: #003366;
+        }
+
+        .bg-campus-primary {
+            background-color: #0066cc;
+        }
+
+        .bg-campus-green {
+            background-color: #33cc99;
+        }
+
+        .bg-campus-orange {
+            background-color: #ff7043;
+        }
+
+        .icon-circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+
+        .hover-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .hover-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            }
+    </style>
+}

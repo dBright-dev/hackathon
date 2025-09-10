@@ -1,0 +1,320 @@
+﻿@using static CampusEvents.Controllers.HomeController
+@model ContactViewModel
+
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="display-4 text-center mb-4">Contact Us</h1>
+
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    @TempData["SuccessMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <!-- Contact Information Cards -->
+            <div class="row mb-5">
+                <div class="col-md-4 text-center mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                            <h5>Address</h5>
+                            <p class="text-muted">123 Campus Drive<br>University City, ST 12345</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                            <h5>Phone</h5>
+                            <p class="text-muted">(555) 123-4567<br>Mon-Fri, 9AM-5PM EST</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                            <h5>Email</h5>
+                            <p class="text-muted">support@campusevents.edu<br>help@campusevents.edu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="card shadow-sm mb-5">
+                <div class="card-body">
+                    <h2 class="h4 mb-4">Send us a Message</h2>
+                    <form asp-action="Contact" method="post">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Name" class="form-label">Your Name *</label>
+                                <input asp-for="Name" class="form-control" placeholder="Enter your full name">
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Email" class="form-label">Email Address *</label>
+                                <input asp-for="Email" type="email" class="form-control" placeholder="Enter your email address">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Subject" class="form-label">Subject *</label>
+                            <select asp-for="Subject" class="form-select">
+                                <option value="">Select a subject</option>
+                                <option value="Technical Support">Technical Support</option>
+                                <option value="Event Creation Help">Event Creation Help</option>
+                                <option value="Account Issues">Account Issues</option>
+                                <option value="Feature Request">Feature Request</option>
+                                <option value="Partnership">Partnership</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span asp-validation-for="Subject" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Message" class="form-label">Message *</label>
+                            <textarea asp-for="Message" class="form-control" rows="5" placeholder="Please describe your issue or question in detail..."></textarea>
+                            <span asp-validation-for="Message" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" required>
+                                <label class="form-check-label">
+                                    I agree to the <a href="@Url.Action("Privacy", "Home")">privacy policy</a> and terms of service
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Enhanced FAQ Section -->
+            <div class="card shadow-sm mt-4" id="faqAccordion">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-question-circle fa-2x text-primary me-3"></i>
+                        <h2 class="h4 mb-0">Frequently Asked Questions</h2>
+                    </div>
+                    <p class="text-muted mb-4">Find quick answers to common questions about CampusEvents.</p>
+
+                    <div class="accordion" id="faqAccordion">
+                        <!-- Account & Registration -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccount">
+                                    <i class="fas fa-user-circle me-2 text-primary"></i>
+                                    Account & Registration
+                                </button>
+                            </h3>
+                            <div id="faqAccount" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <div class="faq-subitem">
+                                        <h6 class="text-primary">How do I create an account?</h6>
+                                        <p>Click on the "Register" button on the homepage, fill in your details including your university email address, and verify your account through the confirmation email sent to you.</p>
+                                    </div>
+                                    <div class="faq-subitem mt-3">
+                                        <h6 class="text-primary">I forgot my password. What should I do?</h6>
+                                        <p>Click on "Forgot Password" on the login page. Enter your email address, and we'll send you a password reset link. The link will expire after 24 hours for security reasons.</p>
+                                    </div>
+                                    <div class="faq-subitem mt-3">
+                                        <h6 class="text-primary">Why do I need to use my university email?</h6>
+                                        <p>We require university email addresses to ensure that only current students, faculty, and staff can access campus-specific events and maintain the security of our platform.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event Management -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqEvents">
+                                    <i class="fas fa-calendar-check me-2 text-success"></i>
+                                    Event Management
+                                </button>
+                            </h3>
+                            <div id="faqEvents" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <div class="faq-subitem">
+                                        <h6 class="text-success">Who can create events?</h6>
+                                        <p>Faculty members, committee chairs, and authorized student organization leaders can create events. Students can suggest events by contacting their department administrator.</p>
+                                    </div>
+                                    <div class="faq-subitem mt-3">
+                                        <h6 class="text-success">How do I create an event?</h6>
+                                        <p>After logging in, click "Create Event" from the events page. Fill in the event details including title, description, date, time, location, and capacity. You can also upload promotional materials.</p>
+                                    </div>
+                                    <div class="faq-subitem mt-3">
+                                        <h6 class="text-success">Can I edit or cancel an event after creation?</h6>
+                                        <p>Yes, event organizers can edit event details up to 1 hour before the event start time. If you need to cancel an event, please contact support for assistance.</p>
+                                    </div>
+                                    <div class="faq-subitem mt-3">
+                                        <h6 class="text-success">How do I manage event registrations?</h6>
+                                        <p>You can view and manage registrations from your event dashboard. The system automatically tracks RSVPs and can export attendee lists if needed.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RSVP & Attendance -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqRSVP">
+                                    <i class="fas fa-ticket-alt me-2 text-warning"></i>
+                                    RSVP & Attendance
+                                </button>
+                            </h3>
+                            <div id="faqRSVP" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <div class="faq-subitem">
+                                        <h6 class="text-warning">How do I RSVP for an event?</h6>
+                                        <p>Navigate to the event details page and click the "Attend" button. You'll receive a confirmation email and calendar invitation.</p>
+                                    </div>
+                                    <div class="faq-subitem mt-3">
+                                        <h6 class="text-warning">Can I change my RSVP status?</h6>
+                                        <p>Yes, you can change your RSVP status up to 2 hours before the event starts. After that, please contact the event organizer directly.</p>
+                                    </div>
+                                    <div class="faq-subitem mt-3">
+                                        <h6 class="text-warning">What if an event is full?</h6>
+                                        <p>You can join the waitlist if available. If spots open up, you'll be automatically registered and notified via email.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Technical Support -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTechnical">
+                                    <i class="fas fa-laptop-code me-2 text-info"></i>
+                                    Technical Support
+                                </button>
+                            </h3>
+                            <div id="faqTechnical" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <div class="faq-subitem">
+                                        <h6 class="text-info">Is there a mobile app available?</h6>
+                                        <p>Yes! CampusEvents is available on both iOS and Android platforms. Search for "CampusEvents" in your app store or download from our website.</p>
+                                    </div>
+                                    <div class="faq-subitem mt-3">
+                                        <h6 class="text-info">What browsers are supported?</h6>
+                                        <p>We support Chrome, Firefox, Safari, and Edge (latest versions). For best performance, we recommend using the latest browser versions.</p>
+                                    </div>
+                                    <div class="faq-subitem mt-3">
+                                        <h6 class="text-info">How do I report a bug or technical issue?</h6>
+                                        <p>Please use the contact form on this page, selecting "Technical Support" as the subject. Include detailed information about the issue and any error messages you received.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Privacy & Security -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqPrivacy">
+                                    <i class="fas fa-shield-alt me-2 text-danger"></i>
+                                    Privacy & Security
+                                </button>
+                            </h3>
+                            <div id="faqPrivacy" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <div class="faq-subitem">
+                                        <h6 class="text-danger">How is my personal information protected?</h6>
+                                        <p>We use industry-standard encryption and security measures to protect your data. Your information is never sold to third parties. Read our <a href="@Url.Action("Privacy", "Home")">privacy policy</a> for more details.</p>
+                                    </div>
+                                    <div class="faq-subitem mt-3">
+                                        <h6 class="text-danger">Who can see my event attendance?</h6>
+                                        <p>Event organizers and authorized university administrators can see attendance lists for administrative purposes. Other students can only see aggregate attendance numbers, not individual names.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Help Links -->
+                    <div class="mt-4 p-3 bg-light rounded">
+                        <h5 class="mb-3">Still need help?</h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <a href="mailto:support@campusevents.edu" class="btn btn-outline-primary w-100">
+                                    <i class="fas fa-envelope me-2"></i>Email Support
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <a href="tel:+15551234567" class="btn btn-outline-success w-100">
+                                    <i class="fas fa-phone me-2"></i>Call Support
+                                </a>
+                            </div>
+                        </div>
+                        <p class="text-muted mt-3 mb-0">
+                            <small>Average response time: 2-4 business hours during regular university hours (9AM-5PM EST, Monday-Friday)</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .faq-subitem {
+        border-left: 3px solid #007bff;
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+
+        .faq-subitem h6 {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+    .accordion-button {
+        font-weight: 600;
+        padding: 1rem 1.25rem;
+    }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #f8f9fa;
+            color: #007bff;
+        }
+
+    .accordion-body {
+        padding: 1.5rem;
+    }
+
+    .bg-light {
+        background-color: #f8f9fa !important;
+    }
+</style>
+
+@section Scripts {
+    <script>
+        // Auto-scroll to FAQ section if coming from floating button
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const scrollToFaq = urlParams.get('scrollTo');
+
+            if (scrollToFaq === 'faq') {
+                const faqSection = document.getElementById('faqAccordion');
+                if (faqSection) {
+                    setTimeout(() => {
+                        faqSection.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                }
+            }
+        });
+    </script>
+}

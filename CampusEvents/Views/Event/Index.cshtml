@@ -1,0 +1,144 @@
+﻿@using Humanizer
+@model IEnumerable<Event>
+
+@{
+    ViewData["Title"] = "Events";
+    var communityId = ViewBag.CommunityId;
+    var communityName = ViewBag.CommunityName;
+}
+
+<div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="display-5 fw-bold">Events</h1>
+            @if (!string.IsNullOrEmpty(communityName))
+            {
+                <p class="text-muted">Community: @communityName</p>
+            }
+        </div>
+        <a asp-action="Create" asp-route-communityId="@communityId" class="btn btn-primary">
+            <i class="fas fa-plus-circle me-2"></i>Create Event
+        </a>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (TempData["InfoMessage"] != null)
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            @TempData["InfoMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (Model.Any())
+    {
+        <div class="row g-4">
+            @foreach (var eventItem in Model)
+            {
+                <div class="col-lg-6">
+                    <div class="card event-card h-100 shadow-sm">
+                        @if (!string.IsNullOrEmpty(eventItem.ImageUrl))
+                        {
+                            <img src="@eventItem.ImageUrl" class="card-img-top event-image" alt="@eventItem.Title">
+                        }
+                        else
+                        {
+                            <div class="card-img-top event-image-placeholder d-flex align-items-center justify-content-center">
+                                <i class="fas fa-calendar-alt fa-3x text-muted"></i>
+                            </div>
+                        }
+
+                        <div class="card-body">
+                            <h5 class="card-title">@eventItem.Title</h5>
+                            <p class="card-text text-muted">@eventItem.Description.Truncate(150)</p>
+
+                            <div class="event-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar-day text-primary me-2"></i>
+                                    <span>@eventItem.EventDate.ToString("MMM dd, yyyy h:mm tt")</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                                    <span>@eventItem.Location</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users text-success me-2"></i>
+                                    <span>@eventItem.RSVPs?.Count RSVPs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer bg-transparent">
+                            <div class="d-grid gap-2">
+                                <a asp-action="Details" asp-route-id="@eventItem.Id" class="btn btn-primary">
+                                    <i class="fas fa-info-circle me-2"></i>View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="text-center py-5">
+            <i class="fas fa-calendar-times fa-5x text-muted mb-4"></i>
+            <h3 class="text-muted">No Events Yet</h3>
+            <p class="text-muted">Be the first to create an event for this community!</p>
+            <a asp-action="Create" asp-route-communityId="@communityId" class="btn btn-primary mt-3">
+                <i class="fas fa-plus-circle me-2"></i>Create First Event
+            </a>
+        </div>
+    }
+</div>
+
+@section Styles {
+    <style>
+        .event-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+            .event-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+            }
+
+        .event-image {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .event-image-placeholder {
+            height: 250px;
+            background-color: #f8f9fa;
+        }
+
+        .event-details {
+            margin-top: 1.5rem;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .card-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+    </style>
+}

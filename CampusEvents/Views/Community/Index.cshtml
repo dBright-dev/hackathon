@@ -1,0 +1,163 @@
+﻿@using CampusEvents.Models.ViewModels
+@using Humanizer
+@model List<CommunityIndexViewModel>
+
+@{
+    ViewData["Title"] = "Communities";
+}
+
+<div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="display-5 fw-bold">Communities</h1>
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="fas fa-plus-circle me-2"></i>Create Community
+        </a>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (TempData["InfoMessage"] != null)
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            @TempData["InfoMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (Model.Any())
+    {
+        <div class="row g-4">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-4 col-md-6">
+                    <div class="card community-card h-100 shadow-sm">
+                        @if (!string.IsNullOrEmpty(item.Community.ImageUrl))
+                        {
+                            <img src="@item.Community.ImageUrl" class="card-img-top community-image" alt="@item.Community.Name">
+                        }
+                        else
+                        {
+                            <div class="card-img-top community-image-placeholder d-flex align-items-center justify-content-center">
+                                <i class="fas fa-users fa-3x text-muted"></i>
+                            </div>
+                        }
+
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Community.Name</h5>
+                            <p class="card-text text-muted">@item.Community.Description.Truncate(100)</p>
+
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-user me-1"></i>Created by @item.Community.CreatedBy
+                                </small>
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>@item.Community.CreatedAt.ToString("MMM dd, yyyy")
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="card-footer bg-transparent">
+                            <div class="d-grid gap-2">
+                                @if (item.IsMember)
+                                {
+                                    <a asp-controller="Event" asp-action="Index" asp-route-communityId="@item.Community.Id"
+                                       class="btn btn-success">
+                                        <i class="fas fa-door-open me-2"></i>View Events
+                                    </a>
+                                    <form asp-action="Leave" method="post">
+                                        <input type="hidden" name="communityId" value="@item.Community.Id" />
+                                        <button type="submit" class="btn btn-outline-danger w-100">
+                                            <i class="fas fa-sign-out-alt me-2"></i>Leave Community
+                                        </button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <form asp-action="Join" method="post">
+                                        <input type="hidden" name="communityId" value="@item.Community.Id" />
+                                        <button type="submit" class="btn btn-primary w-100">
+                                            <i class="fas fa-sign-in-alt me-2"></i>Join Community
+                                        </button>
+                                    </form>
+                                }
+                                <a asp-action="Details" asp-route-id="@item.Community.Id" class="btn btn-outline-secondary">
+                                    <i class="fas fa-info-circle me-2"></i>Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="text-center py-5">
+            <i class="fas fa-users fa-5x text-muted mb-4"></i>
+            <h3 class="text-muted">No Communities Yet</h3>
+            <p class="text-muted">Be the first to create a community!</p>
+            <a asp-action="Create" class="btn btn-primary mt-3">
+                <i class="fas fa-plus-circle me-2"></i>Create First Community
+            </a>
+        </div>
+    }
+</div>
+
+@section Styles {
+    <style>
+        .community-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+            .community-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+            }
+
+        .community-image {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .community-image-placeholder {
+            height: 200px;
+            background-color: #f8f9fa;
+        }
+
+        .card-title {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .card-footer {
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .btn {
+            border-radius: 8px;
+            font-weight: 500;
+        }
+    </style>
+}
+
+@section Scripts {
+    <script>
+        // Add smooth transitions and animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.community-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+                card.classList.add('animate__animated', 'animate__fadeInUp');
+            });
+        });
+    </script>
+}

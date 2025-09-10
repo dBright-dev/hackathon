@@ -1,0 +1,114 @@
+﻿@using CampusEvents.Models.ViewModels
+@model EventViewModel
+
+@{
+    ViewData["Title"] = "Create Event";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-primary text-white py-3">
+                    <h2 class="h4 mb-0"><i class="fas fa-plus-circle me-2"></i>Create New Event</h2>
+                    <p class="mb-0">Community: @Model.CommunityName</p>
+                </div>
+                <div class="card-body p-4">
+                    <!-- Display general error messages -->
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger">
+                            <h5>Please fix the following errors:</h5>
+                            <ul>
+                                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                                {
+                                    <li>@error.ErrorMessage</li>
+                                }
+                            </ul>
+                        </div>
+                    }
+
+                    <form asp-action="Create" method="post" enctype="multipart/form-data" id="eventForm">
+                        <input type="hidden" asp-for="CommunityId" />
+                        <input type="hidden" asp-for="CommunityName" />
+
+                        <div class="mb-3">
+                            <label asp-for="Title" class="form-label fw-semibold">Event Title *</label>
+                            <input asp-for="Title" class="form-control form-control-lg" placeholder="Enter event title">
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label fw-semibold">Description *</label>
+                            <textarea asp-for="Description" class="form-control" rows="5"
+                                      placeholder="Describe your event..."></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="EventDate" class="form-label fw-semibold">Event Date & Time *</label>
+                                <input asp-for="EventDate" class="form-control" type="datetime-local">
+                                <span asp-validation-for="EventDate" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Location" class="form-label fw-semibold">Location *</label>
+                                <input asp-for="Location" class="form-control" placeholder="Enter event location">
+                                <span asp-validation-for="Location" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Image" class="form-label fw-semibold">Event Image</label>
+                                <input asp-for="Image" class="form-control" type="file" accept=".jpg,.jpeg,.png,.gif">
+                                <span asp-validation-for="Image" class="text-danger"></span>
+                                <div class="form-text">Upload an image for your event (optional).</div>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Materials" class="form-label fw-semibold">Event Materials</label>
+                                <input asp-for="Materials" class="form-control" type="file">
+                                <span asp-validation-for="Materials" class="text-danger"></span>
+                                <div class="form-text">Upload materials for your event (optional).</div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a asp-action="Index" asp-route-communityId="@Model.CommunityId" class="btn btn-outline-secondary me-md-2">
+                                <i class="fas fa-arrow-left me-2"></i>Cancel
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-plus-circle me-2"></i>Create Event
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        // Set minimum datetime for event date (current time)
+        document.addEventListener('DOMContentLoaded', function() {
+            const now = new Date();
+            // Format to YYYY-MM-DDTHH:MM
+            const minDateTime = now.toISOString().slice(0, 16);
+            document.getElementById('EventDate').min = minDateTime;
+        });
+
+        // Form submission handling
+        document.getElementById('eventForm').addEventListener('submit', function() {
+            const submitBtn = this.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Creating...';
+        });
+    </script>
+}

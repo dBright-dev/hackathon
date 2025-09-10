@@ -1,0 +1,724 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\models\\viewmodels\\eventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\models\\viewmodels\\eventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\areas\\identity\\pages\\account\\forgotpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\areas\\identity\\pages\\account\\forgotpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\controllers\\calendarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\controllers\\calendarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\campusevents.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\campusevents.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\views\\community\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\views\\community\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\models\\viewmodels\\calenderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\models\\viewmodels\\calenderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\views\\calendar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\views\\calendar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\controllers\\communitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\controllers\\communitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\models\\rsvp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\models\\rsvp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\views\\community\\mycommunities.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\views\\community\\mycommunities.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\models\\community.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\models\\community.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\models\\viewmodels\\communityindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\models\\viewmodels\\communityindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\models\\viewmodels\\communityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\models\\viewmodels\\communityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\views\\event\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\views\\event\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\services\\azureblobstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\services\\azureblobstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\views\\event\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\views\\event\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\services\\iazurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\services\\iazurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\views\\event\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\views\\event\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\views\\event\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\views\\event\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\models\\usercommunity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\models\\usercommunity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|c:\\users\\lab_services_student\\downloads\\campusevents-master\\campusevents\\campusevents\\data\\migrations\\20250910091737_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5403A816-7A52-45DD-BBDA-BAEF0E2A5512}|CampusEvents\\CampusEvents.csproj|solutionrelative:campusevents\\data\\migrations\\20250910091737_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ViewState": "AgIAAIICAAAAAAAAAIAwwGYCAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-09-10T12:44:57.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "CampusEvents\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwCsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-10T12:08:19.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "CampusEvents\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-10T12:08:14.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "CampusEvents\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-10T12:08:17.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "CampusEvents\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAiwMoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T12:09:27.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "CampusEvents\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAswIAAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T12:09:12.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ForgotPasswordConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
+              "RelativeToolTip": "CampusEvents\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-10T12:08:16.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EventViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\ViewModels\\EventViewModel.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Models\\ViewModels\\EventViewModel.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\ViewModels\\EventViewModel.cs",
+              "RelativeToolTip": "CampusEvents\\Models\\ViewModels\\EventViewModel.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T07:41:19.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\appsettings.json",
+              "RelativeDocumentMoniker": "CampusEvents\\appsettings.json",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\appsettings.json",
+              "RelativeToolTip": "CampusEvents\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-08T07:21:18.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Program.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Program.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Program.cs",
+              "RelativeToolTip": "CampusEvents\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T07:21:12.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20250910091737_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Data\\Migrations\\20250910091737_InitialCreate.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Data\\Migrations\\20250910091737_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Data\\Migrations\\20250910091737_InitialCreate.cs",
+              "RelativeToolTip": "CampusEvents\\Data\\Migrations\\20250910091737_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T09:17:37.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "CampusEvents\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T20:24:18.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Community\\Index.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Views\\Community\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Community\\Index.cshtml",
+              "RelativeToolTip": "CampusEvents\\Views\\Community\\Index.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAADwvzIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T08:23:48.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CampusEvents\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAmwLYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T08:26:18.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CampusEvents\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAE4AAAAgMjMzM5MwwAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T08:26:23.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CampusEvents\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T13:41:49.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "CampusEvents\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T13:10:52.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "CampusEvents\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAC0AAACABwAAAEAlwBsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T13:09:11.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CalendarController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Controllers\\CalendarController.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Controllers\\CalendarController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Controllers\\CalendarController.cs",
+              "RelativeToolTip": "CampusEvents\\Controllers\\CalendarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T08:38:24.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CampusEvents.csproj",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\CampusEvents.csproj",
+              "RelativeDocumentMoniker": "CampusEvents\\CampusEvents.csproj",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\CampusEvents.csproj",
+              "RelativeToolTip": "CampusEvents\\CampusEvents.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-09T19:28:24.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Models\\Event.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\Event.cs",
+              "RelativeToolTip": "CampusEvents\\Models\\Event.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:45:05.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "CampusEvents\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "CampusEvents\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAGUCAAAAAAAAAAAYwHQCAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-08T08:29:01.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Controllers\\EventController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Controllers\\EventController.cs",
+              "RelativeToolTip": "CampusEvents\\Controllers\\EventController.cs",
+              "ViewState": "AgIAACgAAAAANyskU68iwBcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:58:58.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Calendar\\Index.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Views\\Calendar\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Calendar\\Index.cshtml",
+              "RelativeToolTip": "CampusEvents\\Views\\Calendar\\Index.cshtml",
+              "ViewState": "AgIAABgAAABgamZmZmYkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T18:29:55.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CalenderViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\ViewModels\\CalenderViewModel.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Models\\ViewModels\\CalenderViewModel.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\ViewModels\\CalenderViewModel.cs",
+              "RelativeToolTip": "CampusEvents\\Models\\ViewModels\\CalenderViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T07:41:30.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CommunityController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Controllers\\CommunityController.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Controllers\\CommunityController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Controllers\\CommunityController.cs",
+              "RelativeToolTip": "CampusEvents\\Controllers\\CommunityController.cs",
+              "ViewState": "AgIAAMoAAACAX2ZmZmYpwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T07:40:11.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "CampusEvents\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T13:11:28.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RSVP.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\RSVP.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Models\\RSVP.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\RSVP.cs",
+              "RelativeToolTip": "CampusEvents\\Models\\RSVP.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:10:29.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\Notification.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Models\\Notification.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\Notification.cs",
+              "RelativeToolTip": "CampusEvents\\Models\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T13:55:22.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Event\\Index.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Views\\Event\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Event\\Index.cshtml",
+              "RelativeToolTip": "CampusEvents\\Views\\Event\\Index.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAACQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-04T06:15:04.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CampusEvents\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAmwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:44:16.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "CampusEvents\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "CampusEvents\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-09-08T13:19:54.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "MyCommunities.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Community\\MyCommunities.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Views\\Community\\MyCommunities.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Community\\MyCommunities.cshtml",
+              "RelativeToolTip": "CampusEvents\\Views\\Community\\MyCommunities.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAIAwwBIAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T08:43:32.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Community.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\Community.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Models\\Community.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\Community.cs",
+              "RelativeToolTip": "CampusEvents\\Models\\Community.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T07:40:32.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Event\\Details.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Views\\Event\\Details.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Event\\Details.cshtml",
+              "RelativeToolTip": "CampusEvents\\Views\\Event\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-04T06:15:56.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CommunityIndexViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\ViewModels\\CommunityIndexViewModel.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Models\\ViewModels\\CommunityIndexViewModel.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\ViewModels\\CommunityIndexViewModel.cs",
+              "RelativeToolTip": "CampusEvents\\Models\\ViewModels\\CommunityIndexViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T08:19:41.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CommunityViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\ViewModels\\CommunityViewModel.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Models\\ViewModels\\CommunityViewModel.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\ViewModels\\CommunityViewModel.cs",
+              "RelativeToolTip": "CampusEvents\\Models\\ViewModels\\CommunityViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T07:41:07.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AzureBlobStorageService.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Services\\AzureBlobStorageService.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Services\\AzureBlobStorageService.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Services\\AzureBlobStorageService.cs",
+              "RelativeToolTip": "CampusEvents\\Services\\AzureBlobStorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T07:42:54.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Event\\Create.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Views\\Event\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Event\\Create.cshtml",
+              "RelativeToolTip": "CampusEvents\\Views\\Event\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T08:25:16.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IAzureStorageService.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Services\\IAzureStorageService.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Services\\IAzureStorageService.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Services\\IAzureStorageService.cs",
+              "RelativeToolTip": "CampusEvents\\Services\\IAzureStorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T07:42:36.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Event\\Delete.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Views\\Event\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Event\\Delete.cshtml",
+              "RelativeToolTip": "CampusEvents\\Views\\Event\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T08:25:21.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Event\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CampusEvents\\Views\\Event\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Views\\Event\\Edit.cshtml",
+              "RelativeToolTip": "CampusEvents\\Views\\Event\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T08:25:31.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "UserCommunity.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\UserCommunity.cs",
+              "RelativeDocumentMoniker": "CampusEvents\\Models\\UserCommunity.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\Models\\UserCommunity.cs",
+              "RelativeToolTip": "CampusEvents\\Models\\UserCommunity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T08:15:53.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "CampusEvents\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\CampusEvents-master\\CampusEvents\\CampusEvents\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "CampusEvents\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-02T11:05:10.5Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
