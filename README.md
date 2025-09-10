@@ -5,7 +5,7 @@
 
 This web application serves as a comprehensive platform for educational institutions to manage events, workshops, and meetups. The goal is to facilitate better communication and engagement by allowing students and faculty to create, manage, and participate in events.
 
-The application was developed by Bolu and Nkumbu as a submission for a hackathon.
+The application was developed by Bolu, Nkumbu and Makhosana as a submission for a hackathon.
 
 ## Features
 
@@ -76,4 +76,4 @@ To run this project, you will need to have the following installed:
 
 - Bolu  
 - Nkumbu
-- Mako
+- Makhosana
