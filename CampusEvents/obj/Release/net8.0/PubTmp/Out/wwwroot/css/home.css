@@ -1,0 +1,41 @@
+﻿/* Homepage Specific Styles */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 100px 0;
+    margin-top: -76px;
+    padding-top: 176px;
+    color: white;
+}
+
+.feature-icon {
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.card:hover .feature-icon {
+    transform: scale(1.1);
+    color: var(--secondary-color);
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Responsive Homepage */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding: 80px 0;
+        padding-top: 156px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}

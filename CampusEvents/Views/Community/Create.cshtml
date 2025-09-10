@@ -1,0 +1,151 @@
+﻿@using CampusEvents.Models.ViewModels
+@model CommunityViewModel
+
+@{
+    ViewData["Title"] = "Create Community";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-primary text-white py-3">
+                    <h2 class="h4 mb-0"><i class="fas fa-plus-circle me-2"></i>Create New Community</h2>
+                </div>
+                <div class="card-body p-4">
+                    <!-- Display general error messages -->
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger">
+                            <h5>Please fix the following errors:</h5>
+                            <ul>
+                                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                                {
+                                    <li>@error.ErrorMessage</li>
+                                }
+                            </ul>
+                        </div>
+                    }
+
+                    <form asp-action="Create" method="post" enctype="multipart/form-data" id="communityForm">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label fw-semibold">Community Name *</label>
+                            <input asp-for="Name" class="form-control form-control-lg" placeholder="Enter community name">
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                            <div class="form-text">Choose a descriptive name for your community (5-100 characters).</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label fw-semibold">Description *</label>
+                            <textarea asp-for="Description" class="form-control" rows="5"
+                                      placeholder="Describe your community's purpose, interests, or goals"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                            <div class="form-text">Provide a detailed description to attract members (10-1000 characters).</div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Image" class="form-label fw-semibold">Community Image</label>
+                            <div class="file-upload-area">
+                                <input asp-for="Image" class="form-control" type="file" accept=".jpg,.jpeg,.png,.gif"
+                                       id="communityImage" style="display: none;">
+                                <label for="communityImage" class="file-upload-label">
+                                    <i class="fas fa-cloud-upload-alt me-2"></i>
+                                    <span class="file-upload-text">Choose community image</span>
+                                </label>
+                            </div>
+                            <span asp-validation-for="Image" class="text-danger"></span>
+                            <div class="form-text">Upload an image that represents your community (JPG, PNG, or GIF, max 5MB).</div>
+
+                            <div class="image-preview mt-3 text-center" id="imagePreview" style="display: none;">
+                                <img class="preview-img img-thumbnail" style="max-height: 200px;">
+                                <button type="button" class="btn btn-sm btn-outline-danger mt-2" onclick="removeImage()">
+                                    <i class="fas fa-times me-1"></i>Remove Image
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a asp-action="Index" class="btn btn-outline-secondary me-md-2">
+                                <i class="fas fa-arrow-left me-2"></i>Cancel
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-plus-circle me-2"></i>Create Community
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .file-upload-area {
+            border: 2px dashed #dee2e6;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            background-color: #f8f9fa;
+        }
+
+            .file-upload-area:hover {
+                border-color: #007bff;
+                background-color: #e8f4f8;
+            }
+
+        .file-upload-label {
+            cursor: pointer;
+            display: block;
+            color: #6c757d;
+            font-weight: 500;
+        }
+
+            .file-upload-label:hover {
+                color: #007bff;
+            }
+    </style>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        // Image preview functionality
+        document.getElementById('communityImage').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const preview = document.getElementById('imagePreview');
+                    const previewImg = preview.querySelector('.preview-img');
+                    previewImg.src = e.target.result;
+                    preview.style.display = 'block';
+                }
+                reader.readAsDataURL(file);
+
+                // Update file upload text
+                document.querySelector('.file-upload-text').textContent = file.name;
+            }
+        });
+
+        function removeImage() {
+            const fileInput = document.getElementById('communityImage');
+            fileInput.value = '';
+            document.getElementById('imagePreview').style.display = 'none';
+            document.querySelector('.file-upload-text').textContent = 'Choose community image';
+        }
+
+        // Form submission handling
+        document.getElementById('communityForm').addEventListener('submit', function() {
+            const submitBtn = this.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Creating...';
+        });
+    </script>
+}

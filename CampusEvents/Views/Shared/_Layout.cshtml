@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title with dynamic content -->
+    <title>@ViewData["Title"] - CampusEvents</title>
+
+    <!-- Meta description for better search snippet -->
+    <meta name="description" content="CampusEvents connects you with your campus community through events and activities. Discover, join, and create campus events easily." />
+
+    <!-- Meta keywords (optional, less important nowadays) -->
+    <meta name="keywords" content="campus, events, college events, university, activities, student, community, event calendar" />
+
+    <!-- Author -->
+    <meta name="author" content="CampusEvents Team" />
+
+    <!-- Canonical URL to avoid duplicate content issues -->
+    <link rel="canonical" href="@Context.Request.Scheme://@Context.Request.Host@Context.Request.Path" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+
+    <!-- Render additional styles from views -->
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" role="navigation" aria-label="Primary navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" asp-area="" asp-controller="Home" asp-action="Index" aria-label="CampusEvents Home">
+                <i class="fas fa-graduation-cap me-2" aria-hidden="true"></i>CampusEvents
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index" aria-current="page">
+                            <i class="fas fa-home me-1" aria-hidden="true"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Community" asp-action="Index">
+                            <i class="fas fa-users me-1" aria-hidden="true"></i>Communities
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Calendar" asp-action="Index">
+                            <i class="fas fa-calendar me-1" aria-hidden="true"></i>Calendar
+                        </a>
+                    </li>
+                </ul>
+                <partial name="_LoginPartial" />
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <!-- Floating Action Button with Options -->
+    <div class="fab-container" id="fabContainer" aria-label="Floating action button with options">
+        <button class="fab-main" onclick="toggleFab()" aria-expanded="false" aria-controls="fabOptions" aria-haspopup="true" aria-label="Open options">
+            <i class="fas fa-plus" aria-hidden="true"></i>
+        </button>
+        <div class="fab-options" id="fabOptions" role="menu" aria-hidden="true">
+            <a href="@Url.Action("Contact", "Home", new { scrollTo = "faq" })" class="fab-option faq floating-help-btn" title="View FAQs" role="menuitem" aria-label="View FAQs">
+                <i class="fas fa-question" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:support@campusevents.edu" class="fab-option support" title="Email Support" role="menuitem" aria-label="Email Support">
+                <i class="fas fa-life-ring" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5" role="contentinfo">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-graduation-cap me-2" aria-hidden="true"></i>CampusEvents</h5>
+                    <p>Connect with your campus community through events and activities.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="@Url.Action("About", "Home")" class="text-white">About Us</a></li>
+                        <li><a href="@Url.Action("Contact", "Home")" class="text-white">Contact</a></li>
+                        <li><a href="@Url.Action("Privacy", "Home")" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a>
+                        <a href="#" class="text-white" aria-label="Twitter"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+                        <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="text-center">
+                <p>&copy; 2025 CampusEvents. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function toggleFab() {
+            const fabContainer = document.getElementById('fabContainer');
+            const fabOptions = document.getElementById('fabOptions');
+            const isActive = fabContainer.classList.toggle('active');
+            fabOptions.setAttribute('aria-hidden', !isActive);
+            fabContainer.querySelector('.fab-main').setAttribute('aria-expanded', isActive);
+        }
+
+        // Close FAB when clicking outside
+        document.addEventListener('click', function(event) {
+            const fabContainer = document.getElementById('fabContainer');
+            if (!fabContainer.contains(event.target) && fabContainer.classList.contains('active')) {
+                fabContainer.classList.remove('active');
+                document.getElementById('fabOptions').setAttribute('aria-hidden', 'true');
+                fabContainer.querySelector('.fab-main').setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Close FAB on escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const fabContainer = document.getElementById('fabContainer');
+                fabContainer.classList.remove('active');
+                document.getElementById('fabOptions').setAttribute('aria-hidden', 'true');
+                fabContainer.querySelector('.fab-main').setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

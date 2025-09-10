@@ -1,0 +1,287 @@
+﻿@using System.Globalization
+@using CampusEvents.Models.ViewModels
+@model CalenderViewModel
+
+@{
+    ViewData["Title"] = "Event Calendar";
+}
+
+<div class="container py-5">
+    <div class="calendar-header d-flex justify-content-between align-items-center mb-4">
+        <a asp-action="Index"
+           asp-route-year="@Model.PreviousMonthYear"
+           asp-route-month="@Model.PreviousMonth"
+           class="btn btn-outline-primary">
+            <i class="fas fa-chevron-left me-2"></i>@DateTimeFormatInfo.CurrentInfo.GetMonthName(Model.PreviousMonth)
+        </a>
+
+        <h2 class="display-5 fw-bold text-center mb-0">@Model.MonthName</h2>
+
+        <a asp-action="Index"
+           asp-route-year="@Model.NextMonthYear"
+           asp-route-month="@Model.NextMonth"
+           class="btn btn-outline-primary">
+            @DateTimeFormatInfo.CurrentInfo.GetMonthName(Model.NextMonth) <i class="fas fa-chevron-right ms-2"></i>
+        </a>
+    </div>
+
+    <div class="calendar-grid card shadow-sm">
+        <div class="calendar-weekdays card-header bg-light">
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+            <div>Sun</div>
+        </div>
+
+        <div class="calendar-body">
+            @for (int week = 0; week < 6; week++)
+            {
+                <div class="calendar-week">
+                    @for (int day = 0; day < 7; day++)
+                    {
+                        var currentDate = Model.StartDate.AddDays(week * 7 + day);
+                        var isCurrentMonth = currentDate.Month == Model.Month;
+                        var isToday = currentDate.Date == DateTime.Today;
+                        var dayEvents = Model.Events.Where(e => e.EventDate.Date == currentDate.Date).ToList();
+
+                        <div class="calendar-day @(!isCurrentMonth ? "other-month" : "") @(isToday ? "today" : "")"
+                             data-date="@currentDate.ToString("yyyy-MM-dd")">
+                            <div class="day-header">
+                                <span class="day-number">@currentDate.Day</span>
+                                @if (isToday)
+                                {
+                                    <span class="today-badge">Today</span>
+                                }
+                            </div>
+
+                            @if (dayEvents.Any())
+                            {
+                                <div class="day-events">
+                                    @foreach (var ev in dayEvents.Take(2))
+                                    {
+                                        <a href="@ev.EventUrl" class="event-item @(ev.HasRSVPd ? "rsvpd" : "")"
+                                           title="@ev.Title - @ev.TimeDisplay">
+                                            <span class="event-time">@ev.TimeDisplay</span>
+                                            <span class="event-title">@ev.Title</span>
+                                        </a>
+                                    }
+
+                                    @if (dayEvents.Count > 2)
+                                    {
+                                        <button type="button" class="more-events-btn"
+                                                data-date="@currentDate.ToString("yyyy-MM-dd")"
+                                                data-bs-toggle="modal" data-bs-target="#dayEventsModal">
+                                            +@(dayEvents.Count - 2) more
+                                        </button>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Day Events Modal -->
+<div class="modal fade" id="dayEventsModal" tabindex="-1" aria-labelledby="dayEventsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="dayEventsModalLabel">Events on <span id="modalDate"></span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modalEventsContent">
+                <div class="text-center py-3">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .calendar-grid {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .calendar-weekdays {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            padding: 1rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .calendar-body {
+            padding: 0;
+        }
+
+        .calendar-week {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            min-height: 120px;
+        }
+
+        .calendar-day {
+            border: 1px solid #dee2e6;
+            padding: 0.5rem;
+            position: relative;
+            min-height: 120px;
+        }
+
+            .calendar-day.other-month {
+                background-color: #f8f9fa;
+                color: #6c757d;
+            }
+
+            .calendar-day.today {
+                background-color: #e8f4f8;
+            }
+
+        .day-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .day-number {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .today-badge {
+            background-color: #007bff;
+            color: white;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .day-events {
+            max-height: 80px;
+            overflow-y: auto;
+        }
+
+        .event-item {
+            display: block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.3rem 0.5rem;
+            border-radius: 6px;
+            margin-bottom: 0.3rem;
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+        }
+
+            .event-item:hover {
+                transform: translateX(2px);
+                color: white;
+                text-decoration: none;
+            }
+
+            .event-item.rsvpd {
+                background: linear-gradient(135deg, #28a745, #20c997);
+            }
+
+        .event-time {
+            font-weight: 600;
+            margin-right: 0.3rem;
+        }
+
+        .event-title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .more-events-btn {
+            background: none;
+            border: none;
+            color: #6c757d;
+            font-size: 0.8rem;
+            cursor: pointer;
+            padding: 0;
+            width: 100%;
+            text-align: left;
+        }
+
+            .more-events-btn:hover {
+                color: #495057;
+                text-decoration: underline;
+            }
+
+        @@media (max-width: 768px) {
+            .calendar-weekdays {
+                display: none;
+            }
+
+            .calendar-week {
+                grid-template-columns: 1fr;
+                min-height: auto;
+            }
+
+            .calendar-day {
+                min-height: auto;
+                margin-bottom: 1rem;
+                border-radius: 10px;
+            }
+
+                .calendar-day.other-month {
+                    display: none;
+                }
+        }
+    </style>
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Load day events when modal is shown
+            $('#dayEventsModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget);
+                var date = button.data('date');
+                var modal = $(this);
+
+                modal.find('#modalDate').text(new Date(date).toLocaleDateString('en-US', {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                }));
+
+                // Load events via AJAX
+                $.get('@Url.Action("DayEvents", "Calendar")', {
+                    year: new Date(date).getFullYear(),
+                    month: new Date(date).getMonth() + 1,
+                    day: new Date(date).getDate()
+                }, function(data) {
+                    modal.find('#modalEventsContent').html(data);
+                }).fail(function() {
+                    modal.find('#modalEventsContent').html(
+                        '<div class="alert alert-danger">Error loading events. Please try again.</div>'
+                    );
+                });
+            });
+
+            // Add click animation to calendar days
+            $('.calendar-day').on('click', function() {
+                $(this).addClass('animate__animated animate__pulse');
+                setTimeout(() => {
+                    $(this).removeClass('animate__animated animate__pulse');
+                }, 300);
+            });
+        });
+    </script>
+}
