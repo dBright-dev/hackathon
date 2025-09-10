@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace CampusEvents.Models.ViewModels
 {
@@ -35,6 +36,7 @@ namespace CampusEvents.Models.ViewModels
         public int CommunityId { get; set; }
 
         // Property to display community name in the view
+        [DisplayName("Community Name")]
         public string CommunityName { get; set; }
     }
 

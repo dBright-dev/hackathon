@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CampusEvents")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c967e38b07273bb8d75b0964ac484bf89d92b721")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a44d3803a52e9a5407827466e32036887ff6f943")]
 [assembly: System.Reflection.AssemblyProductAttribute("CampusEvents")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CampusEvents")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

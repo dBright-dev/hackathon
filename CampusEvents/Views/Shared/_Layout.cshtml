@@ -59,6 +59,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" asp-controller="Community" asp-action="MyCommunities">
+                            <i class="fas fa-user-circle me-1"></i>My Communities
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" asp-controller="Calendar" asp-action="Index">
                             <i class="fas fa-calendar me-1" aria-hidden="true"></i>Calendar
                         </a>
@@ -74,10 +79,11 @@
         @RenderBody()
     </main>
 
+
     <!-- Floating Action Button with Options -->
     <div class="fab-container" id="fabContainer" aria-label="Floating action button with options">
         <button class="fab-main" onclick="toggleFab()" aria-expanded="false" aria-controls="fabOptions" aria-haspopup="true" aria-label="Open options">
-            <i class="fas fa-plus" aria-hidden="true"></i>
+            <i class="fas fa-info-circle" aria-hidden="true"></i>
         </button>
         <div class="fab-options" id="fabOptions" role="menu" aria-hidden="true">
             <a href="@Url.Action("Contact", "Home", new { scrollTo = "faq" })" class="fab-option faq floating-help-btn" title="View FAQs" role="menuitem" aria-label="View FAQs">

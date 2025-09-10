@@ -14,7 +14,6 @@
                     <p class="mb-0">Community: @Model.CommunityName</p>
                 </div>
                 <div class="card-body p-4">
-                    <!-- Display general error messages -->
                     @if (!ViewData.ModelState.IsValid)
                     {
                         <div class="alert alert-danger">
@@ -36,6 +35,7 @@
                             <label asp-for="Title" class="form-label fw-semibold">Event Title *</label>
                             <input asp-for="Title" class="form-control form-control-lg" placeholder="Enter event title">
                             <span asp-validation-for="Title" class="text-danger"></span>
+                            <div class="form-text">Enter a clear and concise title (5-100 characters).</div>
                         </div>
 
                         <div class="mb-3">
@@ -43,19 +43,23 @@
                             <textarea asp-for="Description" class="form-control" rows="5"
                                       placeholder="Describe your event..."></textarea>
                             <span asp-validation-for="Description" class="text-danger"></span>
+                            <div class="form-text">Provide a detailed description to attract members (10-1000 characters).</div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label asp-for="EventDate" class="form-label fw-semibold">Event Date & Time *</label>
-                                <input asp-for="EventDate" class="form-control" type="datetime-local">
+                                <input asp-for="EventDate" class="form-control" type="datetime-local"
+                                       value="@(Model.EventDate.ToString("yyyy-MM-ddTHH:mm"))" id="EventDate" />
                                 <span asp-validation-for="EventDate" class="text-danger"></span>
+                                <div class="form-text">Select the date and time of your event (must be in the future).</div>
                             </div>
 
                             <div class="col-md-6 mb-3">
                                 <label asp-for="Location" class="form-label fw-semibold">Location *</label>
                                 <input asp-for="Location" class="form-control" placeholder="Enter event location">
                                 <span asp-validation-for="Location" class="text-danger"></span>
+                                <div class="form-text">Specify the venue or online meeting link.</div>
                             </div>
                         </div>
 
@@ -64,14 +68,14 @@
                                 <label asp-for="Image" class="form-label fw-semibold">Event Image</label>
                                 <input asp-for="Image" class="form-control" type="file" accept=".jpg,.jpeg,.png,.gif">
                                 <span asp-validation-for="Image" class="text-danger"></span>
-                                <div class="form-text">Upload an image for your event (optional).</div>
+                                <div class="form-text">Upload an image for your event (optional, max 2MB).</div>
                             </div>
 
                             <div class="col-md-6 mb-3">
                                 <label asp-for="Materials" class="form-label fw-semibold">Event Materials</label>
                                 <input asp-for="Materials" class="form-control" type="file">
                                 <span asp-validation-for="Materials" class="text-danger"></span>
-                                <div class="form-text">Upload materials for your event (optional).</div>
+                                <div class="form-text">Upload materials like PDFs or slides (optional).</div>
                             </div>
                         </div>
 
@@ -96,15 +100,12 @@
     }
 
     <script>
-        // Set minimum datetime for event date (current time)
         document.addEventListener('DOMContentLoaded', function() {
             const now = new Date();
-            // Format to YYYY-MM-DDTHH:MM
             const minDateTime = now.toISOString().slice(0, 16);
             document.getElementById('EventDate').min = minDateTime;
         });
 
-        // Form submission handling
         document.getElementById('eventForm').addEventListener('submit', function() {
             const submitBtn = this.querySelector('button[type="submit"]');
             submitBtn.disabled = true;

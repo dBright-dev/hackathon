@@ -49,7 +49,7 @@ namespace CampusEvents.Controllers
                     EventDate = e.EventDate,
                     CommunityName = e.Community.Name,
                     Location = e.Location,
-                    EventUrl = Url.Action("Details", "Events", new { id = e.Id }), // Fixed controller name
+                    EventUrl = Url.Action("Details", "Event", new { id = e.Id }), // Fixed controller name
                     HasRSVPd = e.RSVPs.Any(r => r.UserId.ToString() == userId) // Adjust based on your UserId type
                 })
                 .ToListAsync();
@@ -97,7 +97,7 @@ namespace CampusEvents.Controllers
                     EventDate = e.EventDate,
                     CommunityName = e.Community.Name,
                     Location = e.Location,
-                    EventUrl = Url.Action("Details", "Events", new { id = e.Id }), // Fixed controller name
+                    EventUrl = Url.Action("Details", "Event", new { id = e.Id }), 
                     HasRSVPd = e.RSVPs.Any(r => r.UserId.ToString() == userId) // Adjust based on your UserId type
                 })
                 .ToListAsync();

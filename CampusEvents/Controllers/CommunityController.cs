@@ -1,16 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using System;
+﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
 using CampusEvents.Data;
 using CampusEvents.Models;
 using CampusEvents.Models.ViewModels;
 using CampusEvents.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace CampusEvents.Controllers
 {
+    [Authorize]
     public class CommunityController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -57,6 +59,14 @@ namespace CampusEvents.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Join(int communityId)
         {
+            // Check if user is authenticated
+            if (!User.Identity.IsAuthenticated)
+            {
+                // Store the intended action
+                TempData["ActionMessage"] = "You need to login to join communities.";
+                return RedirectToPage("/Account/Login", new { area = "Identity", returnUrl = Url.Action("Index", "Community") });
+            }
+
             var userId = User.Identity.Name;
 
             // Check if the user is already a member of the community
@@ -94,6 +104,13 @@ namespace CampusEvents.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Leave(int communityId)
         {
+            // Check if user is authenticated
+            if (!User.Identity.IsAuthenticated)
+            {
+                // Store the intended action
+                TempData["ActionMessage"] = "You need to login to join communities.";
+                return RedirectToPage("/Account/Login", new { area = "Identity", returnUrl = Url.Action("Index", "Community") });
+            }
             var userId = User.Identity.Name;
 
             // Find the membership record for the user and community
@@ -115,6 +132,7 @@ namespace CampusEvents.Controllers
 
         // GET: Community/Create
         // Displays the form to create a new community
+        [Authorize(Roles = "Faculty")]
         public IActionResult Create()
         {
             return View();
@@ -124,6 +142,7 @@ namespace CampusEvents.Controllers
         // Handles the submission of the new community creation form
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Faculty")]
         public async Task<IActionResult> Create(CommunityViewModel model)
         {
             try
@@ -218,6 +237,7 @@ namespace CampusEvents.Controllers
 
         // GET: Community/MyCommunities
         // Displays the list of communities the current user has joined
+        [Authorize(Roles = "Faculty,Student")]
         public async Task<IActionResult> MyCommunities()
         {
             var userId = User.Identity.Name;

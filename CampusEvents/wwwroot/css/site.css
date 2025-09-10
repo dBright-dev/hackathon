@@ -619,6 +619,125 @@ body {
     transition: all 0.3s ease;
     pointer-events: none;
 }
+.community-card {
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+}
+
+    .community-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+    }
+
+.community-image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.community-image {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.community-card:hover .community-image {
+    transform: scale(1.05);
+}
+
+.community-image-placeholder {
+    height: 200px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.community-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.community-meta {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.stat-item {
+    padding: 1.5rem;
+}
+
+    .stat-item h3 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+.empty-state {
+    padding: 3rem 2rem;
+    background: #f8f9fa;
+    border-radius: 20px;
+}
+
+.empty-state-icon {
+    opacity: 0.5;
+}
+
+.btn {
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+    .btn:hover {
+        transform: translateY(-2px);
+    }
+
+.card-title {
+    color: #2c3e50;
+    line-height: 1.4;
+}
+
+.badge {
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@@media (max-width: 768px) {
+    .display-5 {
+        font-size: 2.2rem;
+    }
+
+    .community-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .stat-item h3 {
+        font-size: 2rem;
+    }
+}
+
+/* Animation for cards */
+.community-card {
+    animation: fadeInUp 0.6s ease;
+}
+
+@@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .fab-option:hover::after {
     opacity: 1;
@@ -626,7 +745,59 @@ body {
     right: 65px;
 }
 
+    .min-vh-80 {
+        min-height: 80vh;
+    }
+
+    .card {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .form-control, .form-select {
+        border-radius: 8px;
+        padding: 0.75rem;
+    }
+
+    .btn {
+        border-radius: 8px;
+    }
+
+    #passwordRequirements ul {
+        padding-left: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #passwordRequirements li {
+        font-size: 0.8rem;
+        color: #6c757d;
+    }
+
+        #passwordRequirements li.valid {
+            color: #198754;
+        }
+
+        #passwordRequirements li.invalid {
+            color: #dc3545;
+        }
+
+    #passwordMatchText {
+        font-size: 0.8rem;
+    }
+
+        #passwordMatchText.valid {
+            color: #198754;
+        }
+
+        #passwordMatchText.invalid {
+            color: #dc3545;
+        }
+
+   
+
+
 /* Responsive design */
+
 @@media (max-width: 768px) {
     .fab-container {
         bottom: 20px;

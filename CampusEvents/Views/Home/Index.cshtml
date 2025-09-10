@@ -84,20 +84,57 @@
 </section>
 
 
-<section class="py-5 bg-campus-gradient text-white">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h2 class="display-5 fw-bold mb-4">Ready to Get Started?</h2>
-                <p class="lead mb-4">Join thousands of students who are already connecting through CampusEvents.</p>
+@if (!User.Identity.IsAuthenticated)
+{
+    <section class="py-5 bg-campus-gradient text-white position-relative overflow-hidden">
+        <!-- Optional background pattern -->
+        <div class="position-absolute top-0 end-0 opacity-25">
+            <i class="fas fa-calendar-alt fa-10x"></i>
+        </div>
 
-                <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-light btn-lg px-5 rounded-pill shadow">
-                    <i class="fas fa-user-plus me-2"></i>Sign Up Now
-                </a>
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-4">Ready to Get Started?</h2>
+                    <p class="lead mb-4">Join our community of students and faculty members. Discover events, join communities, and connect with your campus.</p>
+
+                    <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                        <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-light btn-lg px-5 rounded-pill shadow">
+                            <i class="fas fa-user-plus me-2"></i>Sign Up Now
+                        </a>
+                        <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-outline-light btn-lg px-5 rounded-pill">
+                            <i class="fas fa-sign-in-alt me-2"></i>Login
+                        </a>
+                    </div>
+
+                    <div class="mt-4">
+                        <small class="opacity-75">
+                            <i class="fas fa-lock me-1"></i>Your information is secure and private
+                        </small>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <style>
+        .bg-campus-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .btn-light:hover {
+            background-color: #f8f9fa;
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-light:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+    </style>
+}
 
 @section Styles {
     <style>

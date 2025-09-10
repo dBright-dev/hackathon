@@ -1,1 +1,55 @@
-﻿
+﻿@model Event
+
+@{
+    ViewData["Title"] = "Delete Event";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-danger text-white py-3">
+                    <h2 class="h4 mb-0"><i class="fas fa-trash-alt me-2"></i>Delete Event</h2>
+                </div>
+                <div class="card-body p-4">
+                    <h3 class="text-danger mb-4">Are you sure you want to delete this event?</h3>
+
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <strong>Warning:</strong> This action cannot be undone. All RSVPs and event data will be permanently deleted.
+                    </div>
+
+                    <div class="event-details">
+                        <h4>@Model.Title</h4>
+                        <p class="text-muted">@Model.Description</p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Date:</strong> @Model.EventDate.ToString("f")</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>Location:</strong> @Model.Location</p>
+                            </div>
+                        </div>
+
+                        <p><strong>Community:</strong> @Model.Community?.Name</p>
+                    </div>
+
+                    <form asp-action="DeleteConfirmed" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="CommunityId" />
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                            <a asp-action="Index" asp-route-communityId="@Model.CommunityId" class="btn btn-outline-secondary me-md-2">
+                                <i class="fas fa-arrow-left me-2"></i>Cancel
+                            </a>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-trash-alt me-2"></i>Delete Event
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

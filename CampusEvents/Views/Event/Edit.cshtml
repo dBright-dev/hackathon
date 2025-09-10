@@ -1,1 +1,79 @@
-﻿
+﻿@model Event
+
+@{
+    ViewData["Title"] = "Edit Event";
+    var communityId = ViewBag.CommunityId;
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-primary text-white py-3">
+                    <h2 class="h4 mb-0"><i class="fas fa-edit me-2"></i>Edit Event</h2>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-action="Edit" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="CommunityId" />
+
+                        <div class="mb-3">
+                            <label asp-for="Title" class="form-label fw-semibold">Event Title *</label>
+                            <input asp-for="Title" class="form-control" />
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                            <div class="form-text">Enter a descriptive title for your event (5-100 characters).</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label fw-semibold">Description *</label>
+                            <textarea asp-for="Description" class="form-control" rows="5"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                            <div class="form-text">Describe your event in detail (10-1000 characters).</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="EventDate" class="form-label fw-semibold">Event Date & Time *</label>
+                                <input asp-for="EventDate" class="form-control" type="datetime-local"
+                                       value="@(Model.EventDate.ToString("yyyy-MM-ddTHH:mm"))" />
+                                <span asp-validation-for="EventDate" class="text-danger"></span>
+                                <div class="form-text">Select the date and time when your event will occur.</div>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Location" class="form-label fw-semibold">Location *</label>
+                                <input asp-for="Location" class="form-control" />
+                                <span asp-validation-for="Location" class="text-danger"></span>
+                                <div class="form-text">Enter the physical or virtual location of your event.</div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a asp-action="Index" asp-route-communityId="@Model.CommunityId" class="btn btn-outline-secondary me-md-2">
+                                <i class="fas fa-arrow-left me-2"></i>Cancel
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save me-2"></i>Save Changes
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set minimum datetime for event date
+            const now = new Date();
+            const minDateTime = now.toISOString().slice(0, 16);
+            document.querySelector('input[type="datetime-local"]').min = minDateTime;
+        });
+    </script>
+}

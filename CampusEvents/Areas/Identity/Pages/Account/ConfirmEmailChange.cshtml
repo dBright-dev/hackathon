@@ -1,0 +1,14 @@
+﻿@page
+@model ConfirmEmailChangeModel
+@{
+    ViewData["Title"] = "Confirm email change";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="text-center mt-3">
+    <p>
+        Already have an account?
+        <a asp-page="./Login" class="text-decoration-none">Login here</a>
+    </p>
+</div>
+<partial name="_StatusMessage" model="Model.StatusMessage" />
